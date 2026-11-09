@@ -1,0 +1,6 @@
+flowchart LR
+  customer["Customer browser on phone or PC"] -->|"GET pages and assets"| preview["Static frontend server on port 3000"]
+  preview --> exportFiles["Next.js exported pages and bundled demo products"]
+  customer --> browserState["Local cart and saved items"]
+  customer --> ephemeral["Temporary contact and receipt selection"]
+  customer --> documents["Preview text download or print"]

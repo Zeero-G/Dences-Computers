@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+.git
+.env
+.env.*
+!.env.example
+test-results
+.impeccable
+.taste-skill

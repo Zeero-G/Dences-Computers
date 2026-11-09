@@ -1,0 +1,15 @@
+flowchart TD
+  selection["Customer selects products"] --> request["Quotation or contact-order request"]
+  request --> check["Staff checks final price and shop stock"]
+  check --> stock{"Shop authority confirms allocation?"}
+  stock -->|"No or offline"| pending["Pending availability confirmation"]
+  pending --> check
+  stock -->|"Yes"| instructions["Confirmed quotation and payment instructions"]
+  instructions --> payment["Customer pays and may upload private receipt"]
+  payment --> review["Owner or authorized worker checks actual payment"]
+  review --> verified{"Full payment verified?"}
+  verified -->|"No"| unresolved["Request correction or resolve exception"]
+  unresolved --> review
+  verified -->|"Yes"| accepted["Accept and prepare allocated order"]
+  accepted --> delivery["Arrange delivery or pickup"]
+  delivery --> handover["Record handover and completion"]

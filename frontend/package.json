@@ -1,0 +1,31 @@
+{
+  "name": "dences-storefront",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "node scripts/serve.mjs",
+    "typecheck": "tsc --noEmit",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,css}' 'scripts/*.mjs' 'tests/*.ts' package.json tsconfig.json next.config.ts '../package.json' '../scripts/*.mjs' '../tests/*.mjs' '../.github/**/*.yml' '../compose*.yaml'",
+    "test": "node --test tests/*.test.ts",
+    "audit:security": "npm audit --audit-level=high"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "lucide-react": "1.70.0",
+    "motion": "14.11.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "prettier": "3.9.10",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+flowchart TB
+  customer["Customer storefront"] --> cloudWeb["Cloud Next.js web and API boundary"]
+  staff["Protected owner and staff ERP"] --> cloudWeb
+  cloudWeb --> modules["Shared TypeScript business modules"]
+  modules --> cloudDb[("Cloud PostgreSQL and shop projections")]
+  modules --> publicImages["Public product image storage"]
+  modules --> evidence["Private evidence storage"]
+  modules -->|"Allocation requests and acknowledgements"| computerHost["Computer shop stock authority"]
+  modules -->|"Allocation requests and acknowledgements"| phoneHost["Phone shop stock authority"]
+  computerTill["Computer shop tills and printer"] --> computerHost
+  phoneTill["Phone shop tills and printer"] --> phoneHost
+  computerHost --> computerDb[("Local PostgreSQL and durable outbox")]
+  phoneHost --> phoneDb[("Local PostgreSQL and durable outbox")]
+  computerHost -->|"Ordered idempotent events"| modules
+  phoneHost -->|"Ordered idempotent events"| modules

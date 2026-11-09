@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T13:40:40.787597+00:00",
+  "title": "Design System: Dences Computers & Mobile",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "surface-deep": {
+        "role": "neutral",
+        "displayName": "Surface deep",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "green": {
+        "role": "semantic",
+        "displayName": "Green",
+        "tonalRamp": [
+          "oklch(15% 0.07 155)",
+          "oklch(27% 0.07 155)",
+          "oklch(38% 0.07 155)",
+          "oklch(49% 0.07 155)",
+          "oklch(61% 0.07 155)",
+          "oklch(72% 0.07 155)",
+          "oklch(84% 0.07 155)",
+          "oklch(95% 0.07 155)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Primary hover",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "secondary-border": {
+        "role": "neutral",
+        "displayName": "Secondary border",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field border",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "saved": {
+        "role": "semantic",
+        "displayName": "Saved",
+        "tonalRamp": [
+          "oklch(15% 0.1 25)",
+          "oklch(27% 0.1 25)",
+          "oklch(38% 0.1 25)",
+          "oklch(49% 0.1 25)",
+          "oklch(61% 0.1 25)",
+          "oklch(72% 0.1 25)",
+          "oklch(84% 0.1 25)",
+          "oklch(95% 0.1 25)"
+        ]
+      },
+      "required": {
+        "role": "semantic",
+        "displayName": "Required",
+        "tonalRamp": [
+          "oklch(15% 0.1 25)",
+          "oklch(27% 0.1 25)",
+          "oklch(38% 0.1 25)",
+          "oklch(49% 0.1 25)",
+          "oklch(61% 0.1 25)",
+          "oklch(72% 0.1 25)",
+          "oklch(84% 0.1 25)",
+          "oklch(95% 0.1 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Desktop hero with responsive overrides."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Collection headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Product card names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base document text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Desktop shared button text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "mobile-menu",
+        "value": "0 12px 20px #0001",
+        "purpose": "Mobile menu overlay."
+      },
+      {
+        "name": "toast",
+        "value": "0 6px 22px #0002",
+        "purpose": "Floating local feedback."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Shared CSS transforms."
+      },
+      {
+        "name": "control-color",
+        "value": "0.2s",
+        "purpose": "Control color changes."
+      },
+      {
+        "name": "control-transform",
+        "value": "0.3s",
+        "purpose": "Press and icon movement."
+      },
+      {
+        "name": "product-image",
+        "value": "0.5s",
+        "purpose": "Product image scale."
+      },
+      {
+        "name": "card-spring",
+        "value": "type: spring; stiffness: 380; damping: 28",
+        "purpose": "3px lift; omitted for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "intermediate-max",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "767px"
+      },
+      {
+        "name": "narrow-max",
+        "value": "370px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "html": "<button class=\"ds-button-primary\">Preview request</button>",
+      "css": ".ds-button-primary{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);background:var(--ink,#1a1a1a);color:var(--paper,#fff);border:1px solid var(--ink,#1a1a1a);display:inline-flex;align-items:center;justify-content:center;padding:15px 21px;min-height:51px;border-radius:9px;font-size:14px;font-weight:500;line-height:1.3;cursor:pointer;transition:background .2s,transform .3s var(--ease,cubic-bezier(.22,1,.36,1)),color .2s}.ds-button-primary:hover{background:#383838}.ds-button-primary:focus-visible{outline:2px solid var(--ink,#1a1a1a);outline-offset:5px;}.ds-button-primary:active{transform:scale(.97)}.ds-button-primary:disabled{opacity:.4;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}",
+      "description": "Shared customer action; keep preview labels truthful."
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "html": "<button class=\"ds-button-secondary\">Preview request</button>",
+      "css": ".ds-button-secondary{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);background:var(--paper,#fff);border:1px solid #d8d8d8;display:inline-flex;align-items:center;justify-content:center;padding:15px 21px;min-height:51px;border-radius:9px;font-size:14px;font-weight:500;line-height:1.3;cursor:pointer;transition:background .2s,transform .3s var(--ease,cubic-bezier(.22,1,.36,1)),color .2s}.ds-button-secondary:hover{background:var(--surface,#f5f5f5)}.ds-button-secondary:focus-visible{outline:2px solid var(--ink,#1a1a1a);outline-offset:5px;}.ds-button-secondary:active{transform:scale(.97)}.ds-button-secondary:disabled{opacity:.4;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-button-secondary{transition:none}}",
+      "description": "Shared customer action; keep preview labels truthful."
+    },
+    {
+      "name": "Request field",
+      "kind": "input",
+      "refersTo": "request-field",
+      "html": "<label class=\"ds-label\">Your name<input class=\"ds-field\" autocomplete=\"name\" placeholder=\"Full name\" required></label>",
+      "css": ".ds-label{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);display:block;font-size:12px;font-weight:500}.ds-field{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);display:block;margin-top:9px;background:var(--paper,#fff);border:1px solid #dcdcdc;border-radius:8px;padding:13px 14px;font-size:13px;line-height:1.5}.ds-field::placeholder{color:#747474}.ds-field:focus-visible{outline:2px solid var(--ink,#1a1a1a);outline-offset:5px;outline-offset:1px}@media(max-width:767px){.ds-field{font-size:16px;padding:12px}}",
+      "description": "Labelled field with mobile type sizing."
+    },
+    {
+      "name": "Collection filters",
+      "kind": "chip",
+      "refersTo": "collection-chip",
+      "html": "<div class=\"ds-chips\" role=\"group\" aria-label=\"Category\"><button class=\"ds-chip\" aria-pressed=\"true\">All products</button><button class=\"ds-chip\" aria-pressed=\"false\">Phones</button></div>",
+      "css": ".ds-chips{display:flex;gap:9px}.ds-chip{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);background:transparent;border:1px solid var(--line,#e6e6e6);border-radius:8px;padding:9px 19px;font-size:13px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.ds-chip:hover{background:var(--surface,#f5f5f5)}.ds-chip[aria-pressed=\"true\"]{background:var(--ink,#1a1a1a);color:var(--paper,#fff);border-color:var(--ink,#1a1a1a)}.ds-chip:focus-visible{outline:2px solid var(--ink,#1a1a1a);outline-offset:5px;}",
+      "description": "Inverted selected filter and outlined alternatives."
+    },
+    {
+      "name": "Main navigation",
+      "kind": "nav",
+      "refersTo": "main-navigation",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a class=\"ds-nav-link\" href=\"/\">Discover</a><a class=\"ds-nav-link\" href=\"/shop?category=Laptops\" aria-current=\"page\">Laptops</a><a class=\"ds-nav-link\" href=\"/shop?category=Phones\">Phones</a></nav>",
+      "css": ".ds-nav{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);display:flex;align-items:center;gap:35px;height:53px;border-block:1px solid var(--line,#e6e6e6);font-size:13px;font-weight:500}.ds-nav-link{position:relative;height:100%;align-content:center;color:inherit;text-decoration:none}.ds-nav-link:after{content:\"\";position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--ink,#1a1a1a);transform:scaleX(0);transition:transform .2s}.ds-nav-link:hover:after,.ds-nav-link[aria-current=\"page\"]:after{transform:scaleX(1)}.ds-nav-link:focus-visible{outline:2px solid var(--ink,#1a1a1a);outline-offset:5px;}",
+      "description": "Desktop current item is determined by actual app path and query."
+    },
+    {
+      "name": "Product card",
+      "kind": "card",
+      "refersTo": "product-card",
+      "html": "<article class=\"ds-card\"><a class=\"ds-image\" href=\"/shop\" aria-label=\"Browse sample laptops\"><span class=\"ds-condition\">New</span><svg class=\"ds-device\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 17V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12M2 17h20l-1 3H3z\"/></svg></a><div class=\"ds-meta\"><span>Sample brand</span><span>Silver</span></div><a class=\"ds-title\" href=\"/shop\">Sample laptop</a><p class=\"ds-spec\">16GB RAM \u00b7 512GB SSD</p><strong class=\"ds-price\">LKR 185,000</strong><p class=\"ds-demo\">Sample product & price</p></article>",
+      "css": ".ds-card{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);max-width:280px}.ds-image{position:relative;display:grid;place-items:center;height:240px;border-radius:11px;background:var(--surface,#f5f5f5);color:inherit;overflow:hidden}.ds-device{width:65%;height:65%;transition:transform .5s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-card:hover .ds-device{transform:scale(1.055)}.ds-condition{position:absolute;top:14px;left:14px;background:var(--paper,#fff);border-radius:5px;padding:7px 9px;font-size:10px;font-weight:500;line-height:1}.ds-meta{display:flex;justify-content:space-between;margin-top:15px;font-size:11px;color:var(--muted,#626262);letter-spacing:.015em}.ds-title{display:block;margin-top:5px;color:inherit;text-decoration:none;font-size:16px;font-weight:600;letter-spacing:-.02em}.ds-spec{margin:5px 0 12px;color:var(--muted,#626262);font-size:12px}.ds-price{font-size:15px;font-weight:600;letter-spacing:-.025em;font-variant-numeric:tabular-nums}.ds-demo{font-size:12px;color:var(--muted,#626262)}.ds-image:focus-visible,.ds-title:focus-visible{outline:2px solid var(--ink,#1a1a1a);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-device{transition:none}}",
+      "description": "Flat product anatomy. Inline SVG stands in for photography in the self-contained panel preview."
+    },
+    {
+      "name": "Order summary",
+      "kind": "custom",
+      "refersTo": "order-summary",
+      "html": "<aside class=\"ds-summary\"><h2 class=\"ds-summary-title\">Your selection</h2><div class=\"ds-summary-row\"><span>Sample subtotal</span><span>LKR 185,000</span></div><div class=\"ds-summary-total\"><span>Total estimate</span><strong>LKR 185,000</strong></div><p class=\"ds-summary-note\">Sample prices. Availability confirmed by the shop.</p></aside>",
+      "css": ".ds-summary{font-family:var(--font,\"General Sans\",Arial,sans-serif);color:var(--ink,#1a1a1a);max-width:355px;background:var(--surface,#f5f5f5);border-radius:var(--radius,12px);padding:26px}.ds-summary-title{margin:0 0 25px;font-size:21px;font-weight:600;letter-spacing:-.025em}.ds-summary-row,.ds-summary-total{display:flex;justify-content:space-between;gap:15px;font-size:12px;margin-top:17px}.ds-summary-total{border-top:1px solid #dedede;margin-top:23px;padding-top:20px;font-size:14px}.ds-summary-total strong{font-size:18px;font-weight:600;letter-spacing:-.03em}.ds-summary-note{color:var(--muted,#626262);font-size:11px;line-height:1.75;margin:16px 0 21px}",
+      "description": "Tonal estimate surface and total divider."
+    }
+  ],
+  "narrative": {
+    "northStar": "Dences monochrome electronics storefront",
+    "overview": "The user-supplied angular white-on-black Dences logo anchors the approved monochrome ecommerce kit's adaptation to electronics. White pages, black actions, quiet grey image wells and contained product photography give devices and prices the strongest visual presence. Desktop layouts extend the mobile kit into a spacious customer storefront.\n\nThe implemented system uses handcrafted CSS, local General Sans fonts, Lucide line icons and restrained Motion interactions. Shared customer components belong to this identity; the later protected ERP has no implemented visual system yet. This record describes the shipped frontend, without adding a new visual direction.",
+    "keyCharacteristics": [
+      "Monochrome surfaces and high-contrast primary actions.",
+      "Contained device imagery and compact product information.",
+      "Gently rounded controls, flat surfaces and fine dividers.",
+      "Responsive shopping layouts with restrained, reduced-motion-aware interactions."
+    ],
+    "rules": [
+      {
+        "name": "The Monochrome Action Rule",
+        "body": "Use ink and paper for primary actions and selection; reserve semantic colors for their implemented meanings.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readable Metadata Rule",
+        "body": "Preserve the final stylesheet's legibility overrides: product metadata uses (11px) desktop, (10px) mobile and (9px) on the narrowest screens; product summaries use (12px) desktop and (11px) mobile. Earlier declarations are superseded.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Use tonal separation and dividers for resting product cards and panels; retain shadows for implemented floating feedback and menus.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the supplied Dences logo and the approved monochrome kit adaptation.",
+      "**Do** reuse the existing CSS tokens and shared customer components before introducing variants.",
+      "**Do** retain keyboard focus, accessible icon labels, state semantics and reduced-motion support.",
+      "**Do** label sample products and prices and keep local-preview notices beside relevant actions.",
+      "**Do** use contained product imagery and test text at both catalogue densities."
+    ],
+    "donts": [
+      "**Don't** introduce a new accent palette, display font or decorative shadow language without an approved identity change.",
+      "**Don't** replace actual code values with framework defaults or an aspirational component-library stack.",
+      "**Don't** imply live stock, a sent request, an uploaded receipt, verified payment or a payment gateway in the preview.",
+      "**Don't** extend customer storefront rules into an invented ERP interface."
+    ]
+  }
+}

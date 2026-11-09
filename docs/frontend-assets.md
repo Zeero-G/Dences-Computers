@@ -1,0 +1,10 @@
+# Frontend assets and design provenance
+
+- Original Dences logo: supplied by the user, copied unchanged to `frontend/public/brand/dences-original.jpg`. Displayed in a black tile so its background fits the brand treatment. No clean transparent PNG has been delivered; the earlier rough generated extraction is not used.
+- Figma reference: https://www.figma.com/design/4hIHnbYKNJbQhJhdcIIGY5/Ecommerce-App-UI-Kit--Freebie---Community-?node-id=0-1. The actual catalogue, product-details and checkout frames were read through MCP. The user requested electronics content, desktop adaptation and Dences branding. This is an adaptation, not an unchanged reproduction of the clothing app.
+- General Sans font: downloaded from Fontshare's official API, four WOFF2 weights hosted locally in `frontend/public/fonts/`. Source https://www.fontshare.com/fonts/general-sans. Verify and retain the applicable font terms before a public production launch; do not infer licensing solely from the download endpoint.
+- Product sample imagery: downloaded from `https://cdn.dummyjson.com/product-images/` and hosted locally. Paths: `laptops/apple-macbook-pro-14-inch-space-grey/{1,2}.webp`, `laptops/asus-zenbook-pro-dual-screen-laptop/1.webp`, `laptops/new-dell-xps-13-9300-laptop/1.webp`, `laptops/lenovo-yoga-920/1.webp`, `smartphones/iphone-13-pro/{1,2}.webp`, `smartphones/samsung-galaxy-s10/1.webp`, `mobile-accessories/apple-airpods/1.webp`, `mobile-accessories/apple-magsafe-battery-pack/1.webp`.
+- These images illustrate a labelled demonstration catalogue, not the shop's actual inventory. Replace them with authorized business product images before public commercial use; source availability is not evidence of rights to resell or advertise a manufacturer's assets.
+- Icons: Lucide React, installed from npm. No Figma screenshot is used as a UI implementation asset. No temporary Figma asset URLs are used at runtime.
+
+The frontend uses locally hosted assets and does not require a remote image or font request to render.

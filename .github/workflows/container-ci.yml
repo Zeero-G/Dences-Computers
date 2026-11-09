@@ -1,0 +1,61 @@
+name: Container CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+  merge_group:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 2 * * *"
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  containers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+      - name: Validate both Compose configurations
+        run: |
+          docker compose config --quiet
+          docker compose -f compose.dev.yaml config --quiet
+      - name: Build runtime, builder and development images
+        run: |
+          docker compose build frontend
+          docker build --target builder --tag dences-builder:local frontend
+          docker build --file frontend/Dockerfile.dev --tag dences-development:local frontend
+      - name: Verify hardened runtime and clean routes
+        env:
+          FRONTEND_BIND_ADDRESS: 127.0.0.1
+          FRONTEND_PORT: "3100"
+        run: |
+          trap 'docker compose down' EXIT
+          docker compose up --detach --wait --wait-timeout 90 frontend
+          container="$(docker compose ps --quiet frontend)"
+          test "$(docker inspect --format '{{.Config.User}}' "$container")" = node
+          test "$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' "$container")" = true
+          docker inspect --format '{{json .HostConfig.CapDrop}}' "$container" | node -e 'let s="";process.stdin.on("data",c=>s+=c).on("end",()=>{if(!JSON.parse(s).includes("ALL"))process.exit(1)})'
+          docker inspect --format '{{json .HostConfig.SecurityOpt}}' "$container" | node -e 'let s="";process.stdin.on("data",c=>s+=c).on("end",()=>{if(!JSON.parse(s).includes("no-new-privileges:true"))process.exit(1)})'
+          docker compose exec -T frontend node -e 'try{require("fs").writeFileSync("/app/write-probe","x");process.exit(1)}catch(e){if(!["EROFS","EACCES"].includes(e.code))throw e}'
+          node --input-type=module -e 'for(const p of ["/","/shop","/product/iphone-13-pro"]){const r=await fetch("http://127.0.0.1:3100"+p);if(r.status!==200||r.headers.get("x-frame-options")!=="DENY")throw Error(p)}'
+      - name: Audit runtime, build and development images with fresh advisories
+        run: bash scripts/scan-containers.sh
+  required:
+    name: Required container checks
+    if: always()
+    needs: [containers]
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Reject an unsuccessful or skipped prerequisite
+        env:
+          CONTAINERS: ${{ needs.containers.result }}
+        run: test "$CONTAINERS" = success

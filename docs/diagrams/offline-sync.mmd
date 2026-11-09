@@ -1,0 +1,17 @@
+sequenceDiagram
+  participant till as Shop till
+  participant localHost as Shop authority
+  participant localDb as Local PostgreSQL
+  participant printer as Receipt printer
+  participant cloud as Cloud application
+  till->>localHost: Submit sale with unique operation ID
+  localHost->>localDb: Transactionally save sale, payment, stock and outbox
+  localDb-->>localHost: Committed bill and shop sequence
+  localHost-->>till: Immutable bill snapshot
+  till->>printer: Print receipt while internet is unavailable
+  loop When connected, retry pending events
+    localHost->>cloud: Send ordered event with operation ID
+    cloud->>cloud: Deduplicate and commit projection atomically
+    cloud-->>localHost: Acknowledge committed event
+    localHost->>localDb: Mark event delivered
+  end

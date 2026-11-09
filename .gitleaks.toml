@@ -1,0 +1,6 @@
+title = "Dences secret scanning"
+[extend]
+useDefault = true
+[[allowlists]]
+description = "Generated artifacts and installed packages; original application files remain in scope"
+paths = ['''(^|/)node_modules/''', '''(^|/)\.next/''', '''(^|/)out/''', '''(^|/)\.taste-skill/inspect/''', '''(^|/)\.impeccable/review/''']

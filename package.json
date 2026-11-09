@@ -1,0 +1,26 @@
+{
+  "name": "dences-project",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Root task commands; frontend dependencies and lockfile live in frontend/.",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "setup": "npm --prefix frontend ci",
+    "dev": "npm --prefix frontend run dev",
+    "start": "npm --prefix frontend start",
+    "build": "npm --prefix frontend run build",
+    "typecheck": "npm --prefix frontend run typecheck",
+    "format:check": "npm --prefix frontend run format:check",
+    "test": "npm --prefix frontend test && node --test tests/*.test.mjs",
+    "audit:security": "npm --prefix frontend run audit:security",
+    "security:secrets": "bash scripts/scan-secrets.sh",
+    "docker:build": "docker compose build frontend",
+    "docker:up": "docker compose up -d --build --wait frontend",
+    "docker:down": "docker compose down",
+    "docker:dev": "docker compose -f compose.dev.yaml up --build",
+    "network": "node scripts/network-info.mjs",
+    "security:containers": "bash scripts/scan-containers.sh"
+  }
+}
